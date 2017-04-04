@@ -14,10 +14,10 @@ window.onload = function () {
     // 加入游戏
     function joinGame (options) {
         var userName = $('#username').val();
-        console.log('==========');
         socket.emit('join', {
             userName: userName,
-            controller: options
+            controller: options,
+            roomId: 1
         });
     }
     // 初始化游客的名字
@@ -29,7 +29,6 @@ window.onload = function () {
     // 初始化 加入房间
     function initJoin () {
         $('#joinBtn').click(function () {
-            console.log('-=-=-=-');
             joinGame(controller);
         });
     }

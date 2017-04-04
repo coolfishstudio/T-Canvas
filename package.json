@@ -21,9 +21,6 @@
   },
   "homepage": "https://github.com/coolfishstudio/oddGame#readme",
   "dependencies": {
-    "cookie-parser": "^1.4.3",
-    "express": "^4.15.2",
-    "serve-static": "^1.12.1",
-    "socket.io": "^1.7.3"
+    
   }
 }

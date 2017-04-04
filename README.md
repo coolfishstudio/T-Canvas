@@ -1,9 +1,3 @@
-# ［奇怪］游戏
+# 奇奇怪怪大乱斗
 
-这是一个不懂做游戏的我，尝试写一个有意思的多人游戏。
-
-## 文档
-[想法](./doc/index.md)
-
-## 进度
-[计划列表](./doc/todo.md)
+自我学习游戏开发 参考[BrowserQuest](https://github.com/mozilla/BrowserQuest)
