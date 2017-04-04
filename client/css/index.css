@@ -20,40 +20,34 @@ html, body {
 canvas {
     display: block;
     touch-action: none;
+    width: 100%;
+    height: 100%;
 }
 a, a:focus, a:hover, a:visited {
     color: inherit;
     cursor: pointer;
     text-decoration: none;
 }
-
-/* app */
-.app {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-/* join */
-.join {
+#gameAreaWrapper {
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
 }
-.join .container {
-    background-color: rgba(0, 0, 0, 0.6);
-    position: absolute;
-    -webkit-transform: translate3d(-50%, -50%, 0);
-    transform: translate3d(-50%, -50%, 0); 
-    text-align: center;
-    top: 50%;
-    left: 50%;
+#startMenuWrapper {
+    overflow: hidden;
+}
+#startMenu {
+    position: relative;
+    margin: auto;
+    margin-top: 5rem;
+    width: 26rem;
     padding: 1rem;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
 }
-.join .container .title {
+#startMenu .title {
     color: #fff;
     font-size: 2.7rem;
     margin-bottom: 1rem;
@@ -61,10 +55,10 @@ a, a:focus, a:hover, a:visited {
     -webkit-transition:text-shadow .2s ease;
     transition:text-shadow .2s ease;
 }
-.join .container .title:hover {
+#startMenu .title:hover {
     text-shadow: 3px 5px #009688;
 }
-.join .container .username {
+#startMenu .playername {
     text-align: center;
     border: 1px solid #ccc;
     color: #009688;
@@ -74,7 +68,7 @@ a, a:focus, a:hover, a:visited {
     margin: .75rem auto;
     min-width: 15rem;
 }
-.join .container .btn {
+#startMenu .btn {
     padding: .25rem 1rem;
     margin: .5rem .25rem;
     font-size: 1.2rem;
@@ -82,36 +76,22 @@ a, a:focus, a:hover, a:visited {
     background: #fff;
     color: #009688;
     border-bottom: 2px solid #009688;
-    border-right: 2px solid #009688;
     cursor: pointer;
-    -webkit-transition: background .5s ease, color .5s ease;
-    transition: background .5s ease, color .5s ease;
+    text-align: center;
 }
-.join .container .btn:hover {
+#startMenu .btn:hover {
     background: #009688;
     color: #fff;
 }
-.join .container .intro {
+#startMenu .intro {
     color: #fff;
     font-size: .9rem;
 }
-.join .container .intro p {
+#startMenu .intro p {
     margin: .2rem 0;
 }
-.join .container .intro strong {
+#startMenu .intro strong {
     color: #ff0;
 }
-@media (max-width: 767px) {
-    .join .container .title {
-        font-size: 1.8rem;
-    }
-    .join .container .username {
-        min-width: auto;
-        font-size: 1rem;
-        margin: .5rem auto;
-        width: 100%;
-    }
-    .join .container .intro {
-        font-size: .7rem;
-    }
-}
+
+
