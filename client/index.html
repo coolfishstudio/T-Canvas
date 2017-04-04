@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>奇怪的游戏</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+        <link rel="stylesheet" href="/css/index.css">
+        <script src="/js/zepto.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="/js/index.js"></script>
+    </head>
+    <body>
+        <div class="app">
+            <div class="game">
+                <div class="container">
+                    
+                </div>
+            </div>
+            <div class="join">
+                <div class="container">
+                    <div class="title">奇奇怪怪大乱斗</div>
+                    <input id="username" type="text" class="username" placeholder="游客" value="游客">
+                    <div class="btn-group">
+                        <div class="btn" id="joinBtn">开始游戏</div>
+                        <div class="btn">创建房间</div>
+                    </div>
+                    <div class="intro">
+                        <p>按键 <strong>w、s、a、d</strong> 上下左右移动。</p>
+                        <p>按键 <strong>j</strong> 跳跃。</p>
+                        <p>按键 <strong>k</strong> 使用物品。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
